@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension xmlns="urn:newrelic-extension">
+   <instrumentation>
+      <!-- instrument MongoDB.Driver.Collection -->
+      <tracerFactory metricName="Mongo">
+         <match assemblyName="MongoDB.Driver" className="MongoDB.Driver.Collection">
+            <exactMethodMatcher methodName="Count" />
+            <exactMethodMatcher methodName="Count" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="FindAll" />
+            <exactMethodMatcher methodName="FindOne" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Find" parameters="System.String" />
+            <exactMethodMatcher methodName="Find" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Find" parameters="MongoDB.Driver.Document,System.Int32,System.Int32" />
+            <exactMethodMatcher methodName="Find" parameters="MongoDB.Driver.Document,System.Int32,System.Int32,MongoDB.DriverDocument" />
+            <exactMethodMatcher methodName="Insert" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Delete" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Update" parameters="MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Update" parameters="MongoDB.Driver.Document,MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="Update" parameters="MongoDB.Driver.Document,MongoDB.Driver.Document,System.Int32" />
+            <exactMethodMatcher methodName="Update" parameters="MongoDB.Driver.Document,MongoDB.Driver.Document,MongoDB.Driver.UpdateFlags" />
+            <exactMethodMatcher methodName="UpdateAll" parameters="MongoDB.Driver.Document,MongoDB.Driver.Document" />
+            <exactMethodMatcher methodName="MapReduce" />
+            <exactMethodMatcher methodName="MapReduceBuilder" />
+         </match>
+      </tracerFactory>
+   </instrumentation>
+</extension>
