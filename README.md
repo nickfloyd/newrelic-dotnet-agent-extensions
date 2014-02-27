@@ -1,4 +1,4 @@
-newrelic-dotnet-agent-extensions
+New Relic .NET Agent Extensions
 ================================
 
 Extensions that work with the [New Relic .NET Agent](https://docs.newrelic.com/docs/dotnet/new-relic-for-net) that will give you more information on various frameworks and modules that can be used with the .NET framework.
