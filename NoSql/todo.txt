@@ -1,0 +1,20 @@
+Wide column stores:
+Hadoop
+Cassandra
+Hypertable
+
+Doc store:
+Elastic search
+Couchbase
+CouchDB
+RavenDB
+densodb
+
+Key/Value stores:
+DynamoDB
+AzureTable
+Riak
+Redis
+Tokyo Cabinet
+MemcacheDB
+KitaroDB
