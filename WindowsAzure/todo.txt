@@ -1,5 +1,4 @@
 Closer look @ Mobile Services
-HDInsight
 Media Services
 Service Bus
 Cache
